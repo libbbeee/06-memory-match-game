@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emoji Memory Match Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <section class="game-header">
+      <div class="title-group">
+        <h1>Emoji Memory Match</h1>
+        <p class="game-info">Find all matching emoji pairs.</p>
+      </div>
+      <div class="stats-panel">
+        <div class="difficulty-panel">
+          <span>Difficulty</span>
+          <div class="difficulty-buttons">
+            <button type="button" class="difficulty-button active" data-level="easy">Easy</button>
+            <button type="button" class="difficulty-button" data-level="medium">Medium</button>
+            <button type="button" class="difficulty-button" data-level="hard">Hard</button>
+          </div>
+        </div>
+        <div class="stat-card">
+          <span>Moves</span>
+          <strong id="move-counter">0</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="board-wrapper">
+      <div id="game-board" class="game-board"></div>
+    </section>
+
+    <section class="victory-panel hidden" id="victory-panel">
+      <h2>🎉 You Won!</h2>
+      <p id="final-score">You finished the game in 0 moves.</p>
+      <button id="reset-button" class="primary-button">Play Again</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
